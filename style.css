@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+
+button {
+    padding: 8px;
+}
+
+.display {
+    display: grid;
+    justify-content: center;
+    margin: 24px;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 200px);
+    row-gap: 8px;
+    column-gap: 8px;
+}
+
+.box {
+    position: flex;
+    justify-content: center;
+    padding: 32px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.box>p{ 
+    font-size: 40px;
+    text-align: center;
+}
